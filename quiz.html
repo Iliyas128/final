@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .question {
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .option {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: #ed5252;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        button:hover {
+            background-color: #fb4747;
+        }
+
+        #result {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #333;
+        }
+
+       
+        .header {
+            background-color: #333;
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            width: 100%;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header-title {
+            font-size: 2em;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .header-nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .header-nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            transition: background-color 0.3s, color 0.3s;
+            border-radius: 5px;
+        }
+
+        .header-nav a:hover {
+            background-color: #555;
+            color: #f96c6c;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <h1 class="header-title">Success is not final, failure is not fatal</h1>
+            <nav class="header-nav">
+                <a href="#">Home</a>
+                <a href="#">Blog/Articles</a>
+                <a href="3page.html">Success Stories</a>
+                <a href="4page.html">Resources & Tools</a>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container">
+        <h1>LETS CHECK WHAT YOU KNOW ABOUT MOTIVATION???</h1>
+
+        <form id="quiz-form">
+            <div class="question" data-correct="1">
+                <p>1. What is intrinsic motivation?</p>
+                <div class="option">
+                    <input type="radio" name="q1" id="q1a1" value="0">
+                    <label for="q1a1">Motivation driven by external rewards</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q1" id="q1a2" value="1">
+                    <label for="q1a2">Motivation to engage in activities for personal satisfaction</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q1" id="q1a3" value="0">
+                    <label for="q1a3">Motivation influenced by social pressures</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q1" id="q1a4" value="0">
+                    <label for="q1a4">Motivation based on monetary benefits</label>
+                </div>
+            </div>
+
+            <div class="question" data-correct="2">
+                <p>2. Which theory focuses on the hierarchy of human needs?</p>
+                <div class="option">
+                    <input type="radio" name="q2" id="q2a1" value="1">
+                    <label for="q2a1">Maslow's Hierarchy of Needs</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q2" id="q2a2" value="0">
+                    <label for="q2a2">Herzberg's Two-Factor Theory</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q2" id="q2a3" value="0">
+                    <label for="q2a3">Self-Determination Theory</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q2" id="q2a4" value="0">
+                    <label for="q2a4">Expectancy Theory</label>
+                </div>
+            </div>
+
+            <div class="question" data-correct="2">
+                <p>3. What is the primary focus of Self-Determination Theory?</p>
+                <div class="option">
+                    <input type="radio" name="q3" id="q3a1" value="0">
+                    <label for="q3a1">The balance of rewards and punishments</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q3" id="q3a2" value="0">
+                    <label for="q3a2">The role of social connections in motivation</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q3" id="q3a3" value="1">
+                    <label for="q3a3">Intrinsic and extrinsic motivation</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q3" id="q3a4" value="0">
+                    <label for="q3a4">The stages of achieving self-actualization</label>
+                </div>
+            </div>
+
+            <div class="question" data-correct="1">
+                <p>4. What is extrinsic motivation?</p>
+                <div class="option">
+                    <input type="radio" name="q4" id="q4a1" value="1">
+                    <label for="q4a1">Motivation driven by external rewards</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q4" id="q4a2" value="0">
+                    <label for="q4a2">Motivation to engage in activities for personal satisfaction</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q4" id="q4a3" value="0">
+                    <label for="q4a3">Motivation that depends on emotional states</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q4" id="q4a4" value="0">
+                    <label for="q4a4">Motivation based purely on curiosity</label>
+                </div>
+            </div>
+            
+            <div class="question" data-correct="2">
+                <p>5. Which motivation theory emphasizes the importance of autonomy, competence, and relatedness?</p>
+                <div class="option">
+                    <input type="radio" name="q5" id="q5a1" value="0">
+                    <label for="q5a1">Maslow's Hierarchy of Needs</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q5" id="q5a2" value="1">
+                    <label for="q5a2">Self-Determination Theory</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q5" id="q5a3" value="0">
+                    <label for="q5a3">Herzberg's Two-Factor Theory</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q5" id="q5a4" value="0">
+                    <label for="q5a4">Expectancy Theory</label>
+                </div>
+            </div>
+            
+            <div class="question" data-correct="3">
+                <p>6. What does Herzberg's Two-Factor Theory identify as hygiene factors?</p>
+                <div class="option">
+                    <input type="radio" name="q6" id="q6a1" value="0">
+                    <label for="q6a1">Personal growth and recognition</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q6" id="q6a2" value="0">
+                    <label for="q6a2">Achievement and responsibility</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q6" id="q6a3" value="1">
+                    <label for="q6a3">Salary, work conditions, and company policy</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q6" id="q6a4" value="0">
+                    <label for="q6a4">Opportunities for advancement</label>
+                </div>
+            </div>
+            
+            <div class="question" data-correct="4">
+                <p>7. What is the main premise of Expectancy Theory?</p>
+                <div class="option">
+                    <input type="radio" name="q7" id="q7a1" value="0">
+                    <label for="q7a1">People are motivated solely by monetary rewards</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q7" id="q7a2" value="0">
+                    <label for="q7a2">Social approval is the strongest motivator</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q7" id="q7a3" value="0">
+                    <label for="q7a3">Motivation arises from intrinsic satisfaction</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q7" id="q7a4" value="1">
+                    <label for="q7a4">Motivation depends on expected outcomes and their value</label>
+                </div>
+            </div>
+            
+            <div class="question" data-correct="1">
+                <p>8. Which type of motivation is primarily influenced by curiosity?</p>
+                <div class="option">
+                    <input type="radio" name="q8" id="q8a1" value="1">
+                    <label for="q8a1">Intrinsic motivation</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q8" id="q8a2" value="0">
+                    <label for="q8a2">Extrinsic motivation</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q8" id="q8a3" value="0">
+                    <label for="q8a3">Hygiene motivation</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q8" id="q8a4" value="0">
+                    <label for="q8a4">Cognitive motivation</label>
+                </div>
+            </div>
+            
+            <div class="question" data-correct="3">
+                <p>9. What is the highest level in Maslow's Hierarchy of Needs?</p>
+                <div class="option">
+                    <input type="radio" name="q9" id="q9a1" value="0">
+                    <label for="q9a1">Esteem</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q9" id="q9a2" value="0">
+                    <label for="q9a2">Safety</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q9" id="q9a3" value="1">
+                    <label for="q9a3">Self-actualization</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q9" id="q9a4" value="0">
+                    <label for="q9a4">Social needs</label>
+                </div>
+            </div>
+            
+            <div class="question" data-correct="2">
+                <p>10. Which factor is most likely to enhance intrinsic motivation?</p>
+                <div class="option">
+                    <input type="radio" name="q10" id="q10a1" value="0">
+                    <label for="q10a1">Financial rewards</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q10" id="q10a2" value="1">
+                    <label for="q10a2">A sense of autonomy</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q10" id="q10a3" value="0">
+                    <label for="q10a3">Strict supervision</label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="q10" id="q10a4" value="0">
+                    <label for="q10a4">Social competition</label>
+                </div>
+            </div>
+            
+
+            
+
+
+            <button type="button" id="submit-quiz">FINISH</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+    <script>
+        document.getElementById("submit-quiz").addEventListener("click", () => {
+            const questions = document.querySelectorAll(".question");
+            let correctAnswers = 0;
+
+            questions.forEach((question) => {
+                const selected = question.querySelector("input[type='radio']:checked");
+                if (selected && parseInt(selected.value) === 1) {
+                    correctAnswers++;
+                }
+            });
+
+            const result = document.getElementById("result");
+            result.textContent = `YOU HAVE ${correctAnswers} / ${questions.length} KNOWLEDGE ABOUT MOTIVATION `;
+        });
+
+    </script>
+</body>
+</html>

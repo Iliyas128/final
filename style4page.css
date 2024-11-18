@@ -1,0 +1,43 @@
+
+body{
+    background: linear-gradient(#ffffff,#1a1919);
+}
+header {
+    background-image: url(NEVER\ STOP\ READING.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+}
+
+nav {
+    display: flex; 
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+footer p{
+    color: white;
+}
+
+.divider {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, #ccc, #333, #ccc);
+    margin: 20px 0;
+}

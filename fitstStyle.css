@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+.body1{
     background-color: rgb(2, 0, 27) ;
     background-size: cover;
     background-repeat: no-repeat;
@@ -188,4 +188,81 @@ align-items: center;
   .footer-lang button:hover {
     background-color: rgb(217, 204, 204); 
   }
+
+  /* news css*/
+
+  .header2 {
+      background-image: url(https://wallpaperaccess.com/full/89691.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      color: white;
+      height: 240px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      
+    }
+
+    .news-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .news-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .news-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .news-content {
+      padding: 15px;
+    }
+
+    .news-content h3 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .news-content p {
+      color: #666;
+      font-size: 1em;
+      margin-bottom: 15px;
+    }
+
+    .news-content a {
+      color: #4CAF50;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .news-content a:hover {
+      text-decoration: underline;
+    }
+
+    .footer2 {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .footer2 a {
+      margin: 0;
+      color: aliceblue;
+      text-decoration: none;
+    }
+    .footer2 a:hover{
+        color: #000000;
+    }
   
