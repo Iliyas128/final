@@ -25,7 +25,6 @@
 .header_menu {
     display: inline-block;
     vertical-align: middle;
-    position: fixed;
     margin-left: 140px;
 }
 
@@ -51,6 +50,7 @@
     cursor: pointer;
     vertical-align: middle;
     transition: all 0.3s ease-out;
+    margin-right: 17px;
 }
 
 .login_btn:hover {
@@ -66,7 +66,7 @@
 .row{
     display: flex;
     flex-direction: row;
-}80
+}
 .text{
     display: flex;
     flex-direction: column;
@@ -93,26 +93,25 @@
 .container2 .news{
 width:1162px;
 height:542px;
-border: solid wheat 2px;
 border-radius: 15px;
 display: flex;
 align-items: center;
+background-color: rgb(22, 19, 67);
 }
 .container2 .news2{
     width:800px;
     height:480px;
-    background-color: antiquewhite;
     margin-left: 30px;
     border-radius: 15px;
 }
 .container2 .history{
     width:1162px;
     height:542px;
-    border: solid wheat 2px;
     border-radius: 15px;
     display: flex;
     align-items: center;
     margin-top: 280px;
+    background-color: rgb(22, 19, 67);
 }
 .container2 .history2{
     width:800px;
@@ -124,11 +123,11 @@ align-items: center;
 .container2 .resources{
     width:1162px;
     height:542px;
-    border: solid wheat 2px;
     border-radius: 15px;
     display: flex;
     align-items: center;
     margin-top: 280px;
+    background-color: rgb(22, 19, 67);
 }
 .container2 .resources2{
     width:800px;
@@ -138,17 +137,17 @@ align-items: center;
     border-radius: 15px;
 }
 .footer {
-    background-color: #aca48f;
-    color: #333;
+    background-color: rgb(2, 0, 27);
+    color: #ab9b9b;
     text-align: center; 
     padding: 20px; 
     font-size: 16px;
     margin-top: 3px;
-    border-top: solid 3px whitesmoke;
+    border-top: solid 1px whitesmoke;
   }
   
   .footer .pi {
-    color: black;
+    color: #ab9b9b;
     font-weight: bold;
     font-size: 20px;
     margin-bottom: 10px;
@@ -159,7 +158,7 @@ align-items: center;
   }
   
   .footer a {
-    color: #000000;
+    color: #ab9b9b;
     text-decoration: none;
     display: inline-block; 
     margin: 5px 0; 
@@ -251,10 +250,13 @@ align-items: center;
     }
 
     .footer2 {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 10px 0;
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        position: relative;
+        bottom: 0;
+        
     }
 
     .footer2 a {
