@@ -128,6 +128,10 @@ background-color: rgb(22, 19, 67);
     margin-left: 30px;
     border-radius: 15px;
 }
+.container2 .history2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;}
 .container2 .resources{
     width:1162px;
     height:542px;
@@ -315,32 +319,33 @@ background-color: rgb(22, 19, 67);
         margin-left: 30px;
       }
       .container2 .news{
-        width: 80%;
+        width: 100%;
         height: auto;
         
       }
       .container2 .news2{
         width: 60%;
         height: 60vh;
-        margin-left: 10%;
         margin-top: 20px;
         margin-bottom: 20px;
       }
       .container2 .history{
-        width: 80%;
+        width: 100%;
+        height: 65vh;
         
       }
       .container2 .history2{
-        width: 60%;
-        margin-left: 10%;
+        width: 70%;
+        height: 50vh;
       }
       .container2 .resources{
-        width: 80%;
+        width: 100%;
+        height: 65vh;
         
       }
       .container2 .resources2{
         width: 60%;
-        margin-left: 10%;
+        height: 55vh;
       }
   @media (max-width: 480px) {
       .login_btn {
